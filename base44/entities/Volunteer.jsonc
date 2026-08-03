@@ -1,0 +1,59 @@
+{
+  "name": "Volunteer",
+  "type": "object",
+  "properties": {
+    "event_title": {
+      "type": "string",
+      "description": "Title of volunteer opportunity"
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of volunteer event"
+    },
+    "start_time": {
+      "type": "string",
+      "description": "Start time (HH:MM format)"
+    },
+    "end_time": {
+      "type": "string",
+      "description": "End time (HH:MM format)"
+    },
+    "location": {
+      "type": "string",
+      "description": "Event location"
+    },
+    "description": {
+      "type": "string",
+      "description": "Event description"
+    },
+    "volunteers_needed": {
+      "type": "integer",
+      "description": "Number of volunteers needed"
+    },
+    "signups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "user_email": {
+            "type": "string"
+          },
+          "user_name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          }
+        }
+      },
+      "default": [],
+      "description": "List of volunteers signed up"
+    }
+  },
+  "required": [
+    "event_title",
+    "event_date",
+    "volunteers_needed"
+  ]
+}

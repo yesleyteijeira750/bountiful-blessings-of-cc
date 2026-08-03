@@ -1,0 +1,39 @@
+{
+  "name": "Photo",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Photo title or caption"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image URL"
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date photo was taken"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "distribution",
+        "volunteer",
+        "event",
+        "facility",
+        "other"
+      ],
+      "default": "other",
+      "description": "Photo category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Photo description"
+    }
+  },
+  "required": [
+    "title",
+    "image_url"
+  ]
+}
