@@ -1,0 +1,45 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "barcode_number": {
+      "type": "string",
+      "description": "Unique barcode number for user identification card"
+    },
+    "notification_preferences": {
+      "type": "object",
+      "properties": {
+        "announcements": {
+          "type": "boolean",
+          "default": true,
+          "description": "Receive notifications for new announcements"
+        },
+        "volunteers": {
+          "type": "boolean",
+          "default": true,
+          "description": "Receive notifications for volunteer opportunities"
+        },
+        "reminders": {
+          "type": "boolean",
+          "default": true,
+          "description": "Receive event reminders"
+        },
+        "system_updates": {
+          "type": "boolean",
+          "default": false,
+          "description": "Receive system updates and news"
+        }
+      },
+      "default": {
+        "announcements": true,
+        "volunteers": true,
+        "reminders": true,
+        "system_updates": false
+      },
+      "description": "User notification preferences"
+    }
+  },
+  "required": [
+    "barcode_number"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Story",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Story title"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Person sharing the story (can be anonymous)"
+    },
+    "story_text": {
+      "type": "string",
+      "description": "The full story"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional image"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Feature on homepage"
+    },
+    "is_approved": {
+      "type": "boolean",
+      "default": false,
+      "description": "Admin approval status"
+    }
+  },
+  "required": [
+    "title",
+    "story_text"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Resource",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Resource title"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "housing",
+        "employment",
+        "healthcare",
+        "education",
+        "financial",
+        "legal",
+        "other"
+      ],
+      "default": "other",
+      "description": "Resource category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Resource description"
+    },
+    "contact_name": {
+      "type": "string",
+      "description": "Contact person or organization"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "website": {
+      "type": "string",
+      "description": "Website URL"
+    },
+    "address": {
+      "type": "string",
+      "description": "Physical address"
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the resource has been verified by admins"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the resource is featured"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "description"
+  ]
+}

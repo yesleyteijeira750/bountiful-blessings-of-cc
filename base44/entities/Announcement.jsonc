@@ -1,0 +1,62 @@
+{
+  "name": "Announcement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Announcement title"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the announcement or event"
+    },
+    "start_time": {
+      "type": "string",
+      "description": "Event start time (HH:MM format)"
+    },
+    "end_time": {
+      "type": "string",
+      "description": "Event end time (HH:MM format)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full announcement description"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional image for the announcement"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "food_distribution",
+        "community_event",
+        "volunteer",
+        "donation_drive",
+        "news"
+      ],
+      "default": "news",
+      "description": "Type of announcement"
+    },
+    "is_pinned": {
+      "type": "boolean",
+      "default": false,
+      "description": "Pin important announcements to the top"
+    },
+    "address": {
+      "type": "string",
+      "description": "Event location address for Google Maps"
+    },
+    "reminder_sent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Track if 1-hour reminder has been sent"
+    }
+  },
+  "required": [
+    "title",
+    "date",
+    "description"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "AccessCode",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Unique access code"
+    },
+    "is_used": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the code has been redeemed"
+    },
+    "used_by_email": {
+      "type": "string",
+      "description": "Email of the user who redeemed the code"
+    },
+    "used_by_name": {
+      "type": "string",
+      "description": "Name of the user who redeemed the code"
+    },
+    "used_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the code was redeemed"
+    },
+    "announcement_id": {
+      "type": "string",
+      "description": "ID of the announcement created with this code"
+    }
+  },
+  "required": [
+    "code"
+  ]
+}
