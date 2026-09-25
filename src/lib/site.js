@@ -4,9 +4,9 @@ export const SITE = {
   logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e4114143e84ad0df65d068/512622c87_1762982225481.jpg",
   phone: "(941) 883-8439",
   phoneHref: "tel:+19418838439",
-  email: "aguilesa@gmail.com",
-  supportEmail: "yesleyteijeira750@gmail.com",
-  domain: "bountifulblessingsofcharlottecountyinc.org",
+  email: "carmen@bbofcc.org",
+  supportEmail: "carmen@bbofcc.org",
+  domain: "bbofcc.org",
 };
 
 export const formatTime = (t) =>
